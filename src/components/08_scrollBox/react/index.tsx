@@ -1,9 +1,7 @@
 import ScrollBox from './scrollBox'
 import data from '../data'
 import { useRef } from 'react'
-import dynamic from 'next/dynamic'
-
-const LazyImage = dynamic(() => import('@/components/06_lazyLoading/4_r/lazyImage'), { ssr: false })
+import { LazyImage } from '@/components/06_lazyLoading/1_r'
 
 export const Item = ({
   id,

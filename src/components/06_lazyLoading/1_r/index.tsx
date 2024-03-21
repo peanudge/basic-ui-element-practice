@@ -7,7 +7,15 @@ const ioOptions: IntersectionObserverInit = {
   threshold: 0,
 }
 
-const LazyImage = ({ src, width, height }: { src: string; width: number; height: number }) => {
+export const LazyImage = ({
+  src,
+  width,
+  height,
+}: {
+  src: string
+  width: number
+  height: number
+}) => {
   const imgRef = useRef<HTMLImageElement>(null)
   const [loaded, setLoaded] = useState(false)
   const { entries, observerRef } = useIntersectionObserver(imgRef, ioOptions)
