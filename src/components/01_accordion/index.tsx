@@ -7,21 +7,23 @@ import Accordion6 from "./6_r";
 import Accordion7 from "./7_r";
 import Accordion8 from "./8_r";
 import cx from "./cx";
-import MyReactAccordion1 from "./my_react_accordion1";
+import MyReactAccordion from "./my_react_accordion";
+import MyVanillaAccordion from "./my_vanila_acoordion";
 
 const Accordions = () => {
   return (
     <div className={cx("Accordions")}>
       <h2>아코디언</h2>
-      <MyReactAccordion1 />
-      {/* <Accordion1 />
+      <MyReactAccordion />
+      <MyVanillaAccordion />
+      <Accordion1 />
       <Accordion2 />
       <Accordion3 />
       <Accordion4V />
       <Accordion5 />
       <Accordion6 />
       <Accordion7 />
-      <Accordion8 /> */}
+      <Accordion8 />
     </div>
   );
 };
