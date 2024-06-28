@@ -7,3 +7,12 @@
 - Create Next App
 - Sass
 - Typescript
+
+## nvm vesrion
+
+`.nvmrc` have setting about required node vesrion.
+
+```bash
+$ nvm install
+$ nvm use
+```
